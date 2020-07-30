@@ -1,0 +1,45 @@
+/*used to apply rules 
+to what is inside the parentheses */
+/*largura maxima*/
+@media(max-width:900px){
+  #page-home{
+    background-position-x: 70vw; /*the image 
+    fades away when reaches 900px in width*/
+  }
+
+  #page-home .content{
+    align-items: center; /*the text
+    centralize when reaches 900px in width*/
+    text-align: center;
+  }
+
+  #page-home header a{
+    position: absolute; /*absolute overwrite, 
+    but with the bottom, comes to bottom*/
+    bottom: 48px;
+
+    left: 50%; /*throws the text in half*/
+    transform: translateX(-50%);
+  }
+
+  #page-home main{
+    align-items: center; /*the text
+    centralize when reaches 900px in width*/
+  }
+}
+
+/*largura minima*/
+@media(min-width:1700px){
+  #page-home{
+    background-position-x: 40vw; /*the image 
+    goes away when reaches 1700px in width*/
+  }
+}
+
+/*altura maxima*/
+@media(max-height:760px){
+  #page-home{
+    background-position-y: 200px; /*the image 
+    will be fixed when reaches 200px in height*/
+  }
+}
